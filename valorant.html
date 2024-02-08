@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<meta name\="viewport" content\="width=device-width, initial-scale=1.0"\>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Valorant</title>
+    <style>
+          .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #3366cc;
+            color: white;
+            display: block;
+            margin: 10px auto;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e30c0c;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        a {
+            padding: 15px 30px;
+            background-color: #8e44ad;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px auto;
+            width: 200px;
+            border-radius: 5px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+s
+       
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            font-family: cursive ;
+        }
+
+        header, section, footer {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }  
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Permite que los botones se envuelvan en múltiples líneas */
+            justify-content: space-around; /* Espaciado uniforme */
+            flex: 0 0 calc(20% - 24px);
+        }
+
+        li {
+            margin: 15px;
+            flex: 0 0 calc(20% - 24px);
+        }
+
+        h1, h2 {
+            color: #3366cc;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+        button {
+            display: block;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            width: 200px; /* Aumentado el ancho */
+            height: 200px; /* Aumentado la altura */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 18px;
+            overflow: hidden;
+            position: relative;
+        }
+        button:hover::before {
+        content: attr(title);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+        .container {
+            text-align: center;
+            background-color: #34495e;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            max-width: 800px;
+        }
+        
+
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        /* Estilos para las imágenes dentro de los botones */
+        button img {
+            max-width: 100%;
+           
+            transform: scale(1);
+            transition: transform 0.3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+        }
+
+        button:hover img {
+            transform: scale(1.2);
+        }
+        .mini-gif {
+      position: absolute;
+      top: 15%;
+      right: 10px;
+      transform: translateY(-50%);
+      height: 300px;
+      width: 300px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Página de Valorant</h1>
+        <p>Explora el emocionante mundo de Valorant.</p>
+        <img src="https://media.tenor.com/RdnZlPDdb1oAAAAd/valorant-play-valorant.gif" alt="Mini GIF" class="mini-gif">
+    </header>
+
+    <section id="about">
+        <h2>Acerca de Valorant</h2>
+        <p>Valorant es el próximo shooter táctico desarrollado y publicado por Riot Games que fue lanzado el 2 de junio de 2020.<br>
+             Ambientada en una Tierra del futuro cercano , únete a otros 4 jugadores contra 5 enemigos en una partida a muerte.<br>
+              <strong> LA CREATIVIDAD ES TU MEJOR ARMA</strong></p>
+    </section>
+
+    <section id="characters">
+        
+        <h2>Personajes</h2>
+        <p>Este juego cuenta con una gran variedad de personajes los cuales puedes usar, al principio empiezas con una cantidad limitada de personajes pero ya sea jugando mas o ingresando cierta cantidad de dinero puedes desbloquear a los demas personajes<br>
+         a continuacion te mostraremos los personajes mas utilizados del juego:</p>
+         <div class="container">
+         <h1>Lista de Personajes</h1>
+        <ul>
+            <li>
+                <button id="boton1" title="Astra">
+                   
+                    <img src="https://th.bing.com/th/id/R.0af1d122cd0d6c12061c068fd61b4141?rik=G1pxc40Xt8ZquQ&pid=ImgRaw&r=0" alt="Personaje 1">
+                </button>
+            </li>
+            <li>
+                <button id="boton2" title="Breach">
+                    
+                    <img src="https://static.wikia.nocookie.net/valorant-lore/images/f/f9/Breach_-_Full_body.png/revision/latest?cb=20210123180613" alt="Personaje 2">
+                </button>
+            </li>
+            <li>
+                <button id="boton3" title="brimstone">
+                    
+                    <img src="https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/brimstone_portrait.png" alt="Personaje 3">
+                </button>
+            </li>
+            <li>
+                <button id="boton4" title="Chamber">
+                    
+                    <img src="https://static.wikia.nocookie.net/valorant/images/a/a2/Chamber_Agent_Valorant.png/revision/latest?cb=20220228094128&path-prefix=de" alt="Personaje 4">
+                </button>
+            </li>
+            <li>
+                <button id="boton5" title="Cypher">
+                  
+                    <img src="https://gamepedia.cursecdn.com/valorant_esports_gamepedia_en/a/a0/Agent_Cypher_Half.png" alt="Personaje 5">
+                </button>
+            </li>
+            <li>
+                <button id="boton6" title="Fade">
+                    
+                    <img src="https://static.wikia.nocookie.net/valorant/images/b/b3/Fade_Agent_Valorant.png/revision/latest?cb=20220430140959&path-prefix=de" alt="Personaje 6">
+                </button>
+            </li>
+            <li>
+                <button id="boton7" title="Gekko">
+                    
+                    <img src="https://liquipedia.net/commons/images/a/a8/Gekko_Artwork.png" alt="Personaje 7">
+                </button>
+            </li>
+            <li>
+                <button id="boton8" title="Harbor">
+                    
+                    <img src="https://static.wikia.nocookie.net/valorant-lore/images/8/8a/Harbor_-_Full_body.png/revision/latest/scale-to-width-down/1200?cb=20221014105501" alt="Personaje 8">
+                </button>
+            </li>
+            <li>
+                <button id="boton9" title="Jett">
+                    
+                    <img src="https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/jett_portrait.png" alt="Personaje 9">
+                </button>
+            </li>
+           
+           
+    </div>
+
+        <!-- Aquí puedes agregar imágenes y descripciones de los personajes -->
+    </section>
+
+    <section id="gameplay">
+        <h2>Jugabilidad</h2>
+        <p>
+            Sumérgete en la acción intensa y estratégica de Valorant. Domina las armas y coordina con tu equipo para alcanzar la victoria.<br>
+             En este emocionante juego, la destreza con las armas es clave, y la coordinación efectiva con tu equipo marca la diferencia.<br>
+              ¿Listo para desafiar tus habilidades tácticas y apuntar hacia la victoria? ¡Juega a Valorant y experimenta la emoción del combate estratégico!<br>
+            
+            </p>
+            <h2>aun no te sientes seguro de descargar el juego? Pues aqui tenemos para ti clips de jugadores profesionales </h2>
+            <p>
+                <video width="640" height="360" controls>
+                    <source src="clipvalo1.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+                <video width="640" height="360" controls>
+                    <source src="clipvalo2.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+              
+                
+            </p>
+    </section>
+
+    <footer>
+        <p><a href="home.html" class="btn">Home</a></p>
+    </footer>
+</body>
+</html>
